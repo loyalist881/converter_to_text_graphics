@@ -7,12 +7,12 @@ import java.awt.image.WritableRaster;
 import java.io.IOException;
 import java.net.URL;
 
-public class tGC implements TextGraphicsConverter {
+public class ImageToAsciiConverter implements TextGraphicsConverter {
 
     private int width;
     private int height;
     private double maxRatio;
-    private TextColorSchema schema = new tCS();
+    private TextColorSchema schema = new AsciiColorSchema();
 
     @Override
     public String convert(String url) throws IOException, BadImageSizeException {
