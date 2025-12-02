@@ -1,6 +1,6 @@
 package ru.netology.graphics.image;
 
-public class tCS implements TextColorSchema {
+public class AsciiColorSchema implements TextColorSchema {
 
     private static final String SYMBOLS = "#$@%*+-'";
 
@@ -10,3 +10,4 @@ public class tCS implements TextColorSchema {
         return SYMBOLS.charAt(index);
     }
 }
+
